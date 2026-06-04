@@ -28,7 +28,8 @@
     }
   },
   "resources": [
-    "skill://.kiro/skills/git/SKILL.md"
+    "skill://.kiro/skills/git/SKILL.md",
+    "skill://.kiro/skills/to-prd/SKILL.md"
   ],
   "mcpServers": {
     "git": {

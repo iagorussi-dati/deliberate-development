@@ -28,7 +28,8 @@
     "file://.kiro/skills/grill-with-docs/CONTEXT-FORMAT.md",
     "file://.kiro/skills/grill-with-docs/ADR-FORMAT.md",
     "skill://.kiro/skills/handoff/SKILL.md",
-    "skill://.kiro/skills/git/SKILL.md"
+    "skill://.kiro/skills/git/SKILL.md",
+    "skill://.kiro/skills/grill-with-docs/SKILL.md"
   ],
   "mcpServers": {},
   "keyboardShortcut": "ctrl+2",

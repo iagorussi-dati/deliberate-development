@@ -36,7 +36,8 @@
     }
   },
   "resources": [
-    "skill://.kiro/skills/git/SKILL.md"
+    "skill://.kiro/skills/git/SKILL.md",
+    "skill://.kiro/skills/qa/SKILL.md"
   ],
   "mcpServers": {
     "playwright": {
