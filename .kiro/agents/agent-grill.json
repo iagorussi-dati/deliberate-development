@@ -1,0 +1,33 @@
+{
+  "name": "agent-grill",
+  "description": "Grill me. Interroga sobre um plano até entendimento compartilhado. Sem codebase.",
+  "model": "claude-opus-4.6",
+  "prompt": "file://./prompts/agent-grill.md",
+  "tools": [
+    "read",
+    "grep",
+    "glob",
+    "code",
+    "shell",
+    "web_search",
+    "web_fetch"
+  ],
+  "allowedTools": [
+    "read",
+    "grep",
+    "glob",
+    "code"
+  ],
+  "toolsSettings": {
+    "shell": {
+      "autoAllowReadonly": true
+    }
+  },
+  "resources": [
+    "skill://./skills/handoff/SKILL.md",
+    "skill://./skills/git/SKILL.md"
+  ],
+  "mcpServers": {},
+  "keyboardShortcut": "ctrl+1",
+  "welcomeMessage": "agent-grill — deliberate development flow"
+}

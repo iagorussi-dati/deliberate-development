@@ -1,0 +1,78 @@
+{
+  "name": "coder",
+  "description": "Dev agent. TDD, focused execution, diagnose, improve architecture.",
+  "model": "claude-opus-4.6",
+  "prompt": "file://./prompts/agent-dev.md",
+  "tools": [
+    "read",
+    "write",
+    "shell",
+    "grep",
+    "glob",
+    "code",
+    "todo_list",
+    "@playwright",
+    "@context7",
+    "@git"
+  ],
+  "allowedTools": [
+    "read",
+    "write",
+    "grep",
+    "glob",
+    "code",
+    "todo_list"
+  ],
+  "toolsSettings": {
+    "shell": {
+      "allowedCommands": [
+        "npm.*",
+        "pnpm.*",
+        "yarn.*",
+        "npx.*",
+        "go .*",
+        "cargo.*",
+        "python.*",
+        "pytest.*",
+        "make.*",
+        "git .*",
+        "gh .*"
+      ],
+      "autoAllowReadonly": true
+    }
+  },
+  "resources": [
+    "file://./skills/tdd/deep-modules.md",
+    "file://./skills/tdd/tests.md",
+    "file://./skills/tdd/mocking.md",
+    "file://./skills/tdd/interface-design.md",
+    "file://./skills/tdd/refactoring.md",
+    "file://./skills/improve-codebase-architecture/LANGUAGE.md",
+    "file://./skills/improve-codebase-architecture/INTERFACE-DESIGN.md",
+    "file://./skills/improve-codebase-architecture/DEEPENING.md",
+    "skill://./skills/git/SKILL.md"
+  ],
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ]
+    },
+    "git": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-git"
+      ]
+    }
+  },
+  "keyboardShortcut": "ctrl+5",
+  "welcomeMessage": "coder — deliberate development flow"
+}

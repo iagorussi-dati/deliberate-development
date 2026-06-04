@@ -1,0 +1,57 @@
+{
+  "name": "agent-qa",
+  "description": "QA interativo. Reporta bugs como GitHub Issues com domain language.",
+  "model": "claude-opus-4.6",
+  "prompt": "file://./prompts/agent-qa.md",
+  "tools": [
+    "read",
+    "grep",
+    "glob",
+    "code",
+    "shell",
+    "@playwright",
+    "@git"
+  ],
+  "allowedTools": [
+    "read",
+    "grep",
+    "glob",
+    "code",
+    "@playwright/browser_navigate",
+    "@playwright/browser_snapshot",
+    "@playwright/browser_take_screenshot",
+    "@playwright/browser_click",
+    "@playwright/browser_type"
+  ],
+  "toolsSettings": {
+    "shell": {
+      "allowedCommands": [
+        "gh .*",
+        "git log.*",
+        "git diff.*",
+        "git status",
+        "curl.*"
+      ],
+      "autoAllowReadonly": true
+    }
+  },
+  "resources": [
+    "skill://./skills/git/SKILL.md"
+  ],
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "git": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-git"
+      ]
+    }
+  },
+  "keyboardShortcut": "ctrl+6",
+  "welcomeMessage": "agent-qa — deliberate development flow"
+}

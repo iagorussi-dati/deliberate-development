@@ -1,0 +1,36 @@
+{
+  "name": "agent-grill-docs",
+  "description": "Grill with docs. Interroga contra o domain model, atualiza CONTEXT.md e ADRs inline.",
+  "model": "claude-opus-4.6",
+  "prompt": "file://./prompts/agent-grill-docs.md",
+  "tools": [
+    "read",
+    "write",
+    "grep",
+    "glob",
+    "code",
+    "shell",
+    "web_search",
+    "web_fetch"
+  ],
+  "allowedTools": [
+    "read",
+    "grep",
+    "glob",
+    "code"
+  ],
+  "toolsSettings": {
+    "shell": {
+      "autoAllowReadonly": true
+    }
+  },
+  "resources": [
+    "file://./skills/grill-with-docs/CONTEXT-FORMAT.md",
+    "file://./skills/grill-with-docs/ADR-FORMAT.md",
+    "skill://./skills/handoff/SKILL.md",
+    "skill://./skills/git/SKILL.md"
+  ],
+  "mcpServers": {},
+  "keyboardShortcut": "ctrl+2",
+  "welcomeMessage": "agent-grill-docs — deliberate development flow"
+}
