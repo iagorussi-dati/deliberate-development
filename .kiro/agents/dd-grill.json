@@ -24,8 +24,8 @@
     }
   },
   "resources": [
-    "skill://./skills/handoff/SKILL.md",
-    "skill://./skills/git/SKILL.md"
+    "skill://.kiro/skills/handoff/SKILL.md",
+    "skill://.kiro/skills/git/SKILL.md"
   ],
   "mcpServers": {},
   "keyboardShortcut": "ctrl+1",
