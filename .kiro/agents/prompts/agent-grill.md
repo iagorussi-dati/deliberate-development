@@ -11,5 +11,5 @@ If a question can be answered by exploring the codebase, explore the codebase in
 Quando o entendimento compartilhado for atingido, encerre com:
 
 > ✅ Entendimento compartilhado atingido.
-> **Próximo agent:** `agent-grill-docs` (ctrl+2) — para interrogar contra o domain model e atualizar CONTEXT.md/ADRs.
-> Se o projeto já tem CONTEXT.md atualizado, pule direto para `agent-prd` (ctrl+3).
+> **Próximo agent:** `dd-grill-docs` (ctrl+2) — para interrogar contra o domain model e atualizar CONTEXT.md/ADRs.
+> Se o projeto já tem CONTEXT.md atualizado, pule direto para `dd-prd` (ctrl+3).

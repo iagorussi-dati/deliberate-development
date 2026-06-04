@@ -1,8 +1,8 @@
 {
-  "name": "agent-issues",
-  "description": "Quebra PRD em vertical slices e publica como GitHub Issues.",
+  "name": "dd-prd",
+  "description": "Escreve PRD a partir do contexto da conversa e publica como GitHub Issue.",
   "model": "claude-opus-4.6",
-  "prompt": "file://./prompts/agent-issues.md",
+  "prompt": "file://./prompts/agent-prd.md",
   "tools": [
     "read",
     "grep",
@@ -38,6 +38,6 @@
       ]
     }
   },
-  "keyboardShortcut": "ctrl+4",
-  "welcomeMessage": "agent-issues — deliberate development flow"
+  "keyboardShortcut": "ctrl+3",
+  "welcomeMessage": "agent-prd — deliberate development flow"
 }

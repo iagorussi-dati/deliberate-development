@@ -89,4 +89,4 @@ If any of the three is missing, skip the ADR.
 Quando o domain model estiver atualizado e as decisões cristalizadas, encerre com:
 
 > ✅ Domain model atualizado, decisões registradas.
-> **Próximo agent:** `agent-prd` (ctrl+3) — para sintetizar tudo num PRD e publicar como GitHub Issue.
+> **Próximo agent:** `dd-prd` (ctrl+3) — para sintetizar tudo num PRD e publicar como GitHub Issue.

@@ -8,17 +8,17 @@ Um fluxo de desenvolvimento com agents de IA que te guia desde a ideia até o c�
 
 | Atalho | Agent | O que faz |
 |--------|-------|-----------|
-| `ctrl+1` | **grill** | Te entrevista sobre a sua ideia até vocês dois entenderem o que precisa ser feito |
-| `ctrl+2` | **grill-docs** | Mesma coisa, mas olha o código e atualiza a documentação do domínio |
-| `ctrl+3` | **prd** | Escreve um documento de requisitos (PRD) e publica como Issue no GitHub |
-| `ctrl+4` | **issues** | Quebra o PRD em tarefas pequenas e publica cada uma como Issue |
-| `ctrl+5` | **coder** | Implementa as tarefas com TDD (escreve teste primeiro, depois o código) |
-| `ctrl+6` | **qa** | Testa o que foi feito e reporta bugs como Issues |
+| `ctrl+1` | **dd-grill** | Te entrevista sobre a sua ideia até vocês dois entenderem o que precisa ser feito |
+| `ctrl+2` | **dd-grill-docs** | Mesma coisa, mas olha o código e atualiza a documentação do domínio |
+| `ctrl+3` | **dd-prd** | Escreve um documento de requisitos (PRD) e publica como Issue no GitHub |
+| `ctrl+4` | **dd-issues** | Quebra o PRD em tarefas pequenas e publica cada uma como Issue |
+| `ctrl+5` | **dd-coder** | Implementa as tarefas com TDD (escreve teste primeiro, depois o código) |
+| `ctrl+6` | **dd-qa** | Testa o que foi feito e reporta bugs como Issues |
 
 ## O fluxo
 
 ```
-Ideia → grill → grill-docs → prd → issues → coder → qa
+Ideia → dd-grill → dd-grill-docs → dd-prd → dd-issues → dd-coder → dd-qa
          ↑                                            |
          └────────── (encontrou bug? volta) ──────────┘
 ```
@@ -95,7 +95,7 @@ kiro
 ### Só quer codar uma issue que já existe
 
 1. `kiro`
-2. `ctrl+5` (coder)
+2. `ctrl+5` (dd-coder)
 3. Cola o número da issue: "implementa a #42"
 
 ### Quer testar o que foi feito

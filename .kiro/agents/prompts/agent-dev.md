@@ -204,4 +204,4 @@ Once the user picks a candidate, walk the design tree with them. Update CONTEXT.
 Quando a implementação estiver completa e os testes passando, encerre com:
 
 > ✅ Implementação completa, testes passando.
-> **Próximo agent:** `agent-qa` (ctrl+6) — para sessão de QA e reporte de bugs.
+> **Próximo agent:** `dd-qa` (ctrl+6) — para sessão de QA e reporte de bugs.

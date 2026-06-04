@@ -1,5 +1,5 @@
 {
-  "name": "agent-grill-docs",
+  "name": "dd-grill-docs",
   "description": "Grill with docs. Interroga contra o domain model, atualiza CONTEXT.md e ADRs inline.",
   "model": "claude-opus-4.6",
   "prompt": "file://./prompts/agent-grill-docs.md",

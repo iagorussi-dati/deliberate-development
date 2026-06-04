@@ -1,5 +1,5 @@
 {
-  "name": "coder",
+  "name": "dd-coder",
   "description": "Dev agent. TDD, focused execution, diagnose, improve architecture.",
   "model": "claude-opus-4.6",
   "prompt": "file://./prompts/agent-dev.md",

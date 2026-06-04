@@ -1,5 +1,5 @@
 {
-  "name": "agent-grill",
+  "name": "dd-grill",
   "description": "Grill me. Interroga sobre um plano até entendimento compartilhado. Sem codebase.",
   "model": "claude-opus-4.6",
   "prompt": "file://./prompts/agent-grill.md",

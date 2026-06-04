@@ -80,4 +80,4 @@ Do NOT close or modify any parent issue.
 Quando todas as issues estiverem publicadas, encerre com:
 
 > ✅ Issues publicadas: <lista de URLs>
-> **Próximo agent:** `coder` (ctrl+5) — para implementar cada issue com TDD e focused execution.
+> **Próximo agent:** `dd-coder` (ctrl+5) — para implementar cada issue com TDD e focused execution.

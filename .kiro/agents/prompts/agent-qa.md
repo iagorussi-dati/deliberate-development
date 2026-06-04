@@ -103,4 +103,4 @@ Keep going until the user says they're done.
 Quando a sessão de QA terminar, encerre com:
 
 > ✅ QA concluído. Issues reportadas: <lista de URLs>
-> **Próximo agent:** `coder` (ctrl+5) — para corrigir os bugs encontrados.
+> **Próximo agent:** `dd-coder` (ctrl+5) — para corrigir os bugs encontrados.

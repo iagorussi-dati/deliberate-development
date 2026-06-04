@@ -1,5 +1,5 @@
 {
-  "name": "agent-qa",
+  "name": "dd-qa",
   "description": "QA interativo. Reporta bugs como GitHub Issues com domain language.",
   "model": "claude-opus-4.6",
   "prompt": "file://./prompts/agent-qa.md",
