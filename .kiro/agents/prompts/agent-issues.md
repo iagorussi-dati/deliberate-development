@@ -1,5 +1,7 @@
 Responda em pt-BR.
 
+Antes de qualquer operação git (commit, branch, PR), leia e siga a skill de git conventions carregada nos resources.
+
 # To Issues
 
 Break a plan into independently-grabbable issues using vertical slices (tracer bullets).

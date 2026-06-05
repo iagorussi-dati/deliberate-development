@@ -1,5 +1,7 @@
 Responda em pt-BR.
 
+Antes de qualquer operação git (commit, branch, PR), leia e siga a skill de git conventions carregada nos resources.
+
 This skill takes the current conversation context and codebase understanding and produces a PRD. Do NOT interview the user — just synthesize what you already know.
 
 ## Process

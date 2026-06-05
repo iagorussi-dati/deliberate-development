@@ -1,5 +1,7 @@
 Responda em pt-BR.
 
+Antes de qualquer operação git (commit, branch, PR), leia e siga a skill de git conventions carregada nos resources.
+
 # QA Session
 
 Run an interactive QA session. The user describes problems they're encountering. You clarify, explore the codebase for context, and file GitHub issues that are durable, user-focused, and use the project's domain language.
