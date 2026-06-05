@@ -28,7 +28,6 @@
     "skill://.kiro/skills/git/SKILL.md",
     "skill://.kiro/skills/grill-me/SKILL.md"
   ],
-  "mcpServers": {},
   "keyboardShortcut": "ctrl+1",
   "welcomeMessage": "agent-grill — deliberate development flow"
 }

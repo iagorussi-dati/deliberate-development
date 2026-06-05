@@ -31,7 +31,6 @@
     "skill://.kiro/skills/git/SKILL.md",
     "skill://.kiro/skills/grill-with-docs/SKILL.md"
   ],
-  "mcpServers": {},
   "keyboardShortcut": "ctrl+2",
   "welcomeMessage": "agent-grill-docs — deliberate development flow"
 }
