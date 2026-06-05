@@ -24,7 +24,6 @@
     }
   },
   "resources": [
-    "file://.kiro/skills/grill-me/SKILL.md",
     "skill://.kiro/skills/handoff/SKILL.md",
     "skill://.kiro/skills/git/SKILL.md"
   ],

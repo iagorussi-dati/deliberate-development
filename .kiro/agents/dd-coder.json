@@ -50,10 +50,7 @@
     "file://.kiro/skills/improve-codebase-architecture/LANGUAGE.md",
     "file://.kiro/skills/improve-codebase-architecture/INTERFACE-DESIGN.md",
     "file://.kiro/skills/improve-codebase-architecture/DEEPENING.md",
-    "skill://.kiro/skills/git/SKILL.md",
-    "file://.kiro/skills/tdd/SKILL.md",
-    "file://.kiro/skills/focused-execution/SKILL.md",
-    "file://.kiro/skills/improve-codebase-architecture/SKILL.md"
+    "skill://.kiro/skills/git/SKILL.md"
   ],
   "mcpServers": {
     "playwright": {
