@@ -89,7 +89,18 @@ Or "None - can start immediately" if no blockers.
 
 </issue-template>
 
-Do NOT close or modify any parent issue.
+### 6. Update the parent PRD
+
+After all child issues are published, edit the parent PRD issue body (`gh issue edit <PRD-number> --body ...`) to append a task list at the end:
+
+```
+## Issues
+- [ ] #12
+- [ ] #13
+- [ ] #14
+```
+
+This creates bidirectional links and a progress bar on the PRD. Do NOT close the parent PRD.
 
 ## Handoff
 

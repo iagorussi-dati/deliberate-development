@@ -88,7 +88,7 @@ Create issues with `gh issue create --label bug --label ready-for-agent`. Always
 - **Reproduction steps are mandatory**
 - **Keep it concise**
 
-After filing, print all issue URLs and ask: "Next issue, or are we done?"
+After filing, update the parent PRD issue body to append the bug references to the task list (e.g. `- [ ] #XX`). Then print all issue URLs and ask: "Next issue, or are we done?"
 
 ### 5. Continue the session
 
