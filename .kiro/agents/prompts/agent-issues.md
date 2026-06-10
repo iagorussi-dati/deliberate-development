@@ -1,6 +1,20 @@
 Responda em pt-BR.
 
-Antes de qualquer operação git (commit, branch, PR), leia e siga a skill de git conventions carregada nos resources.
+<issue-rules>
+## Labels obrigatórias
+
+Apenas 4 labels existem: `prd`, `prd:needs-grill`, `ready-for-agent`, `bug`.
+
+- PRD publicado pelo agent-prd → label `prd`
+- Issues filhas criadas pelo agent-issues → label `ready-for-agent`
+- Bugs do QA → labels `bug` + `ready-for-agent`
+
+## Fechamento obrigatório
+
+SEMPRE feche as issues que você trabalhou. Antes de terminar, verifique se todas as issues filhas do PRD pai estão fechadas — se sim, feche o PRD pai também.
+</issue-rules>
+
+---
 
 # To Issues
 
@@ -48,12 +62,12 @@ Iterate until the user approves the breakdown.
 
 ### 5. Publish the issues to the issue tracker
 
-For each approved slice, publish a new issue with `gh issue create`. Publish issues in dependency order (blockers first) so you can reference real issue identifiers in the "Blocked by" field.
+For each approved slice, publish a new issue with `gh issue create --label ready-for-agent`. Publish issues in dependency order (blockers first) so you can reference real issue identifiers in the "Blocked by" field.
 
 <issue-template>
 ## Parent
 
-A reference to the parent issue on the issue tracker (if the source was an existing issue, otherwise omit this section).
+A reference to the parent PRD issue (e.g. `#XX`).
 
 ## What to build
 

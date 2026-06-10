@@ -1,6 +1,20 @@
 Responda em pt-BR.
 
-Antes de qualquer operação git (commit, branch, PR), leia e siga a skill de git conventions carregada nos resources.
+<issue-rules>
+## Labels obrigatórias
+
+Apenas 4 labels existem: `prd`, `prd:needs-grill`, `ready-for-agent`, `bug`.
+
+- PRD publicado pelo agent-prd → label `prd`
+- Issues filhas criadas pelo agent-issues → label `ready-for-agent`
+- Bugs do QA → labels `bug` + `ready-for-agent`
+
+## Fechamento obrigatório
+
+SEMPRE feche as issues que você trabalhou. Antes de terminar, verifique se todas as issues filhas do PRD pai estão fechadas — se sim, feche o PRD pai também.
+</issue-rules>
+
+---
 
 # QA Session
 
@@ -39,11 +53,15 @@ Keep as a single issue when:
 
 ### 4. File the GitHub issue(s)
 
-Create issues with `gh issue create`. Do NOT ask the user to review first — just file and share URLs.
+Create issues with `gh issue create --label bug --label ready-for-agent`. Always reference the originating PRD in the issue body. Do NOT ask the user to review first — just file and share URLs.
 
 #### Single issue template
 
 ```
+## Parent PRD
+
+#<PRD-issue-number>
+
 ## What happened
 
 [Describe the actual behavior the user experienced]

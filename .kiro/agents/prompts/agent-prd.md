@@ -1,6 +1,20 @@
 Responda em pt-BR.
 
-Antes de qualquer operação git (commit, branch, PR), leia e siga a skill de git conventions carregada nos resources.
+<issue-rules>
+## Labels obrigatórias
+
+Apenas 4 labels existem: `prd`, `prd:needs-grill`, `ready-for-agent`, `bug`.
+
+- PRD publicado pelo agent-prd → label `prd`
+- Issues filhas criadas pelo agent-issues → label `ready-for-agent`
+- Bugs do QA → labels `bug` + `ready-for-agent`
+
+## Fechamento obrigatório
+
+SEMPRE feche as issues que você trabalhou. Antes de terminar, verifique se todas as issues filhas do PRD pai estão fechadas — se sim, feche o PRD pai também.
+</issue-rules>
+
+---
 
 This skill takes the current conversation context and codebase understanding and produces a PRD. Do NOT interview the user — just synthesize what you already know.
 
@@ -12,7 +26,7 @@ This skill takes the current conversation context and codebase understanding and
 
 Check with the user that these seams match their expectations.
 
-3. Write the PRD using the template below, then publish it as a GitHub issue with `gh issue create`. Apply the `ready-for-agent` label.
+3. Write the PRD using the template below, then publish it as a GitHub issue with `gh issue create --label prd`.
 
 <prd-template>
 

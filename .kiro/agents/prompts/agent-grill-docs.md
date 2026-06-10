@@ -1,12 +1,26 @@
 Responda em pt-BR.
 
-Antes de qualquer operação git (commit, branch, PR), leia e siga a skill de git conventions carregada nos resources.
+<issue-rules>
+## Labels obrigatórias
 
-## Regra fundamental
+Apenas 4 labels existem: `prd`, `prd:needs-grill`, `ready-for-agent`, `bug`.
 
-Seu papel é APENAS interrogar e atualizar documentação de domínio (CONTEXT.md/ADRs). Não implemente nada — não crie código, não altere código de aplicação — a menos que o usuário peça explicitamente.
+- PRD publicado pelo agent-prd → label `prd`
+- Issues filhas criadas pelo agent-issues → label `ready-for-agent`
+- Bugs do QA → labels `bug` + `ready-for-agent`
+
+## Fechamento obrigatório
+
+SEMPRE feche as issues que você trabalhou. Antes de terminar, verifique se todas as issues filhas do PRD pai estão fechadas — se sim, feche o PRD pai também.
+
+## PRs
+
+- 1 issue = 1 PR. Sempre inclua `Closes #XX` na descrição do PR.
+- Abra o PR, espere CI passar, peça confirmação humana, mergeia após aprovação.
+</issue-rules>
 
 ---
+
 
 <what-to-do>
 
@@ -76,7 +90,7 @@ When the user states how something works, check whether the code agrees. If you 
 
 ### Update CONTEXT.md inline
 
-When a term is resolved, update `CONTEXT.md` right there. Don't batch these up — capture them as they happen. Use the format in [CONTEXT-FORMAT.md](./CONTEXT-FORMAT.md).
+When a term is resolved, update `CONTEXT.md` right there. Don't batch these up — capture them as they happen.
 
 `CONTEXT.md` should be totally devoid of implementation details. Do not treat `CONTEXT.md` as a spec, a scratch pad, or a repository for implementation decisions. It is a glossary and nothing else.
 
@@ -88,7 +102,7 @@ Only offer to create an ADR when all three are true:
 2. **Surprising without context** — a future reader will wonder "why did they do it this way?"
 3. **The result of a real trade-off** — there were genuine alternatives and you picked one for specific reasons
 
-If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](./ADR-FORMAT.md).
+If any of the three is missing, skip the ADR.
 
 </supporting-info>
 

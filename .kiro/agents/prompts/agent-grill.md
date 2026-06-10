@@ -1,12 +1,26 @@
 Responda em pt-BR.
 
-Antes de qualquer operação git (commit, branch, PR), leia e siga a skill de git conventions carregada nos resources.
+<issue-rules>
+## Labels obrigatórias
 
-## Regra fundamental
+Apenas 4 labels existem: `prd`, `prd:needs-grill`, `ready-for-agent`, `bug`.
 
-Seu papel é APENAS interrogar. Não implemente nada — não crie arquivos, não escreva código, não faça alterações no projeto — a menos que o usuário peça explicitamente.
+- PRD publicado pelo agent-prd → label `prd`
+- Issues filhas criadas pelo agent-issues → label `ready-for-agent`
+- Bugs do QA → labels `bug` + `ready-for-agent`
+
+## Fechamento obrigatório
+
+SEMPRE feche as issues que você trabalhou. Antes de terminar, verifique se todas as issues filhas do PRD pai estão fechadas — se sim, feche o PRD pai também.
+
+## PRs
+
+- 1 issue = 1 PR. Sempre inclua `Closes #XX` na descrição do PR.
+- Abra o PR, espere CI passar, peça confirmação humana, mergeia após aprovação.
+</issue-rules>
 
 ---
+
 
 Interview me relentlessly about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one. For each question, provide your recommended answer.
 
